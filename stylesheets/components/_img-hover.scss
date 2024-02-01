@@ -1,0 +1,8 @@
+.img-hover{
+    transition: all 1s ease !important;
+}
+.card:hover{
+    & .img-hover{
+        opacity: 0 !important;
+    }
+}
