@@ -37,13 +37,13 @@ $('#Region').on('change',function(){
     if($('#Region option:selected').val() == 'none'){
         return
     }else{
-        let Region = $('#Region option:selected').val()
+        let Region = $('#Region option:selected').val();
         let str = ``;
         Arr_Region[Region].forEach(function(item){
             str += `
             <option value="${item[1]}">${item[0]}</option>
             `;
         })
-        $('#County-and-city').html(str)
+        $('#County-and-city').html(str);
     }
 });
