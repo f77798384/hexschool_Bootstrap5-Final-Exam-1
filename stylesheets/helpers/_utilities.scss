@@ -809,8 +809,19 @@ $utilities: map-merge(
       property: z-index,
       class: z,
       values: $zindex-levels,
-    )
+    ),
     // scss-docs-end utils-zindex
+    "rotate":(
+      property: transform,
+      class: rotate,
+      values:(
+        0: rotate(0deg),
+        45: rotate(45deg),
+        90: rotate(90deg),
+        135: rotate(135deg),
+        180: rotate(180deg)
+      )
+    )
   ),
   $utilities
 );
