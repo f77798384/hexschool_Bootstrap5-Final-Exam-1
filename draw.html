@@ -14,17 +14,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Noto Sans TC';
-        }
-    </style>
 </head>
 
 <body style="background: url(./images/lightpaperfibers.png);">
-    <nav class="navbar navbar-expand-sm navbar-light bg-white py-3 sticky-top px-5">
-        <a class="navbar-brand ps-5" href="#">
-            <img src="./images/logo.png" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top px-5">
+        <a class="navbar-brand ps-5" href="./index.html">
+            <img src="./images/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -33,11 +28,11 @@
         </button>
         <div class="collapse navbar-collapse pe-5" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                <li class="nav-item ms-3 active">
-                    <a class="nav-link active" href="./index.html">首頁</a>
+                <li class="nav-item ms-3 ">
+                    <a class="nav-link " href="./index.html">首頁</a>
                 </li>
                 <li class="nav-item ms-3">
-                    <a class="nav-link" href="./service.html">服務介紹</a>
+                    <a class="nav-link " href="./service.html">服務介紹</a>
                 </li>
                 <li class="nav-item ms-3">
                     <a class="nav-link" href="./works.html">設計作品</a>
@@ -46,21 +41,21 @@
                     <a class="nav-link" href="./adoption.html">領養專區</a>
                 </li>
                 <li class="nav-item ms-3">
-                    <a class="btn btn-primary rounded-pill px-4" href="./draw.html">毛孩似顏繪</a>
+                    <a class="btn btn-primary rounded-pill px-4 active" href="./draw.html">毛孩似顏繪</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="banner text-center">
-        <img src="./images/banner.png" alt="" class=" w-100 d-none d-lg-block">
-        <img src="./images/banner_service-sm.png" alt="" class="w-100 d-sm-none  ">
+        <img src="./images/banner.png" alt="banner" class=" w-100 d-none d-sm-block">
+        <img src="./images/banner_service-sm.png" alt="banner" class="w-100 d-sm-none  ">
     </div>
 
     <section class="py-5 container ">
         <div class="row justify-content-center ">
             <div class="col-lg-8 border-top border-primary border-5 rounded-4 px-0  bg-white ">
-                <form action="" class="p-4 shadow-lg rounded-4">
+                <form action="" class="p-4 shadow-lg rounded-4" >
                     <h3 class="text-center pt-4 pb-5">填寫訂購資訊</h3>
                     <div class="mb-3 pt-3">
                         <div class="row gx-2 gy-3 row-cols-1  row-cols-lg-2 ">
@@ -84,7 +79,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <label for="address" class="form-label">收件地址</label>
-                                <div class="row row-cols-1 row-cols-lg-2 pb-3 gx-2">
+                                <div class="row row-cols-1 row-cols-lg-2 pb-3 g-2">
                                     <div class="col">
                                         <select class="form-select " name="Region" id="Region">
                                             <option value="none" disabled selected>地區</option>
@@ -145,8 +140,8 @@
                                 <label for="content" class="form-label">備註說明</label>
                                 <textarea class="form-control" name="content" id="content" rows="3"></textarea>
                             </div>
-                            <div class="col-lg-12 text-center pt-4">
-                                <h5 class="fw-bold ">總金額 NT$ <span class=" text-primary ">300</span></h5>
+                            <div class="col-lg-12 text-center pt-4" >
+                                <h5 class="fw-bold " >總金額 NT$ <span class=" text-primary ">300</span></h5>
                             </div>
                             <div class="col-lg-12 text-center py-2">
                                 <button type="submit" class="btn btn-primary w-25">
@@ -169,14 +164,14 @@
 
 
 
-    <footer>
+    <footer class="pt-5">
         <div class="connect border-top border-primary border-5 bg-white ">
             <div class="container d-flex justify-content-center ">
                 <div class="row row-cols-1 row-cols-lg-2 g-3 text-center text-lg-start py-5">
                     <div class="col">
                         <div class="card border-0">
                             <div class="card-body d-lg-flex flex-lg-row">
-                                <img src="./images/link01.png" alt="" class="img-fluid object-fit-contain">
+                                <img src="./images/link01.png" alt="join" class="img-fluid object-fit-contain">
                                 <div class="content ps-3 pt-3">
                                     <h4 class="card-title">加入奴才團隊</h4>
                                     <p class="card-text">我也會畫畫，希望能盡一份心力！</p>
@@ -189,12 +184,12 @@
                     <div class="col">
                         <div class="card border-0">
                             <div class="card-body d-lg-flex flex-lg-row">
-                                <img src="./images/link02.png" alt="" class="img-fluid object-fit-contain">
+                                <img src="./images/link02.png" alt="join" class="img-fluid object-fit-contain">
                                 <div class="content ps-3 pt-3">
                                     <h4 class="card-title">加入奴才團隊</h4>
                                     <p class="card-text">我也會畫畫，希望能盡一份心力！</p>
                                     <a class="btn btn-outline-primary rounded-pill border-black text-black px-5 fs-5 btn-hover"
-                                        href="#" role="button">領養專區</a>
+                                        href="./adoption.html" role="button">領養專區</a>
                                 </div>
                             </div>
                         </div>
