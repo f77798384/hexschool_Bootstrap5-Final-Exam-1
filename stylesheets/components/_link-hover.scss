@@ -1,5 +1,6 @@
 .link-hover{
     transition: all 0.2s;
+    white-space: nowrap;
     &:hover{
         color:$primary !important;
         & .link-hover-line{

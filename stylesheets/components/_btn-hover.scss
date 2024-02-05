@@ -3,3 +3,8 @@
         border-color: transparent  !important; 
     }
 }
+.btn-hover-shadow{
+    &:hover{
+        box-shadow: 0 2px 2px 0px black;
+    }
+}

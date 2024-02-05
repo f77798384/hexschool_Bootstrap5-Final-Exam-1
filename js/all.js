@@ -47,3 +47,9 @@ $('#Region').on('change',function(){
         $('#County-and-city').html(str);
     }
 });
+
+$('#Designer-Menu').click(function (e) { 
+    e.preventDefault();
+    console.log($(e.target).closest('a').parent().siblings().children('a'))
+    $(e.target).closest('a').addClass('active').parent().siblings().children('a').removeClass('active');
+});
