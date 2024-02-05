@@ -45,113 +45,115 @@
         </div>
     </nav>
 
-    <div class="banner text-center">
-        <img src="./images/banner.png" alt="banner" class=" w-100 d-none d-sm-block">
-        <img src="./images/banner_service-sm.png" alt="banner" class="w-100 d-sm-none  ">
-    </div>
-
-    <section class="py-5 container">
-        <div class="row justify-content-center ">
-            <div class="col-lg-8">
-                <form action="" class="p-4 shadow-lg font-Noto border-top border-primary border-5 rounded-4 bg-white">
-                    <h3 class="text-center pt-4 pb-5">填寫訂購資訊</h3>
-                    <div class="mb-3 pt-3">
-                        <div class="row gx-2 gy-3 row-cols-1  row-cols-lg-2 ">
-                            <div class="col-lg-6">
-                                <label for="lastName" class="form-label">姓氏</label>
-                                <input type="text" name="lastName" id="lastName" class="form-control"
-                                    placeholder="" />
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="firstName" class="form-label">名字</label>
-                                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="" />
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="phoneNumber" class="form-label">手機號碼</label>
-                                <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control"
-                                    placeholder="" />
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="email" class="form-label">電子郵件</label>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="" />
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="address" class="form-label">收件地址</label>
-                                <div class="row row-cols-1 row-cols-lg-2 pb-3 g-2">
-                                    <div class="col">
-                                        <select class="form-select " name="Region" id="Region">
-                                            <option value="none" disabled selected>地區</option>
-                                            <option value="North-Region">北部地區</option>
-                                            <option value="Middle-Region">中部地區</option>
-                                            <option value="South-Region">南部地區</option>
-                                            <option value="East-Region">東部地區</option>
-                                            <option value="Outlying-islands">離島</option>
-                                        </select>
+    <div class="main" style="background: url(./images/lightpaperfibers.png);">
+        <div class="banner text-center">
+            <img src="./images/banner.png" alt="banner" class=" w-100 d-none d-sm-block">
+            <img src="./images/banner_service-sm.png" alt="banner" class="w-100 d-sm-none  ">
+        </div>
+    
+        <section class="py-5 container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-8">
+                    <form action="" class="p-4 shadow-lg font-Noto border-top border-primary border-5 rounded-4 bg-white">
+                        <h3 class="text-center pt-4 pb-5">填寫訂購資訊</h3>
+                        <div class="mb-3 pt-3">
+                            <div class="row gx-2 gy-3 row-cols-1  row-cols-lg-2 ">
+                                <div class="col-lg-6">
+                                    <label for="lastName" class="form-label">姓氏</label>
+                                    <input type="text" name="lastName" id="lastName" class="form-control"
+                                        placeholder="" />
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="firstName" class="form-label">名字</label>
+                                    <input type="text" name="firstName" id="firstName" class="form-control" placeholder="" />
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="phoneNumber" class="form-label">手機號碼</label>
+                                    <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control"
+                                        placeholder="" />
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="email" class="form-label">電子郵件</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="" />
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="address" class="form-label">收件地址</label>
+                                    <div class="row row-cols-1 row-cols-lg-2 pb-3 g-2">
+                                        <div class="col">
+                                            <select class="form-select " name="Region" id="Region">
+                                                <option value="none" disabled selected>地區</option>
+                                                <option value="North-Region">北部地區</option>
+                                                <option value="Middle-Region">中部地區</option>
+                                                <option value="South-Region">南部地區</option>
+                                                <option value="East-Region">東部地區</option>
+                                                <option value="Outlying-islands">離島</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-select " name="
+                                            County-and-city" id="County-and-city">
+                                            <option value="none">請先選擇地區</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <select class="form-select " name="
-                                        County-and-city" id="County-and-city">
-                                        <option value="none">請先選擇地區</option>
-                                        </select>
+                                    <input type="text" name="address" id="address" class="form-control" placeholder="" />
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="Artist" class="form-label">選擇設計師風格</label>
+                                    <select class="form-select " name="Artist" id="Artist">
+                                        <option value="Meili">Meili</option>
+                                        <option value="Zoe">Zoe</option>
+                                        <option value="Michael">Michael</option>
+                                        <option value="Birdy">Birdy</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="Payment-method" class="form-label">付款方式</label>
+                                    <select class="form-select " name="Payment-method" id="Payment-method">
+                                        <option value="
+                                        Cash-on-delivery">貨到付款</option>
+                                        <option value="E-payment">電子支付</option>
+                                        <option value="Transfer-money">銀行轉帳</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="" class="form-label">加購服務</label>
+                                    <div class="d-flex flex-wrap ">
+                                        <div class="form-check pe-3">
+                                            <input class="form-check-input" type="checkbox" value="services1"
+                                                id="services1" />
+                                            <label class="form-check-label" for="services1">
+                                                送禮用包裝<span class="ps-1 text-primary fw-bold ">+100</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check pe-3">
+                                            <input class="form-check-input" type="checkbox" value="services2"
+                                                id="services2" />
+                                            <label class="form-check-label" for="services2">
+                                                無框畫<span class="ps-1 text-primary fw-bold ">+250</span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <input type="text" name="address" id="address" class="form-control" placeholder="" />
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="Artist" class="form-label">選擇設計師風格</label>
-                                <select class="form-select " name="Artist" id="Artist">
-                                    <option value="Meili">Meili</option>
-                                    <option value="Zoe">Zoe</option>
-                                    <option value="Michael">Michael</option>
-                                    <option value="Birdy">Birdy</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="Payment-method" class="form-label">付款方式</label>
-                                <select class="form-select " name="Payment-method" id="Payment-method">
-                                    <option value="
-                                    Cash-on-delivery">貨到付款</option>
-                                    <option value="E-payment">電子支付</option>
-                                    <option value="Transfer-money">銀行轉帳</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="" class="form-label">加購服務</label>
-                                <div class="d-flex flex-wrap ">
-                                    <div class="form-check pe-3">
-                                        <input class="form-check-input" type="checkbox" value="services1"
-                                            id="services1" />
-                                        <label class="form-check-label" for="services1">
-                                            送禮用包裝<span class="ps-1 text-primary fw-bold ">+100</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check pe-3">
-                                        <input class="form-check-input" type="checkbox" value="services2"
-                                            id="services2" />
-                                        <label class="form-check-label" for="services2">
-                                            無框畫<span class="ps-1 text-primary fw-bold ">+250</span>
-                                        </label>
-                                    </div>
+                                <div class="col-lg-12">
+                                    <label for="content" class="form-label">備註說明</label>
+                                    <textarea class="form-control" name="content" id="content" rows="3"></textarea>
                                 </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="content" class="form-label">備註說明</label>
-                                <textarea class="form-control" name="content" id="content" rows="3"></textarea>
-                            </div>
-                            <div class="col-lg-12 text-center pt-4" >
-                                <h5 class="fw-bold " >總金額 NT$ <span class=" text-primary ">300</span></h5>
-                            </div>
-                            <div class="col-lg-12 text-center py-2">
-                                <button type="submit" class="btn btn-primary px-4 rounded-pill">
-                                    送出訂購資訊
-                                </button>
+                                <div class="col-lg-12 text-center pt-4" >
+                                    <h5 class="fw-bold " >總金額 NT$ <span class=" text-primary ">300</span></h5>
+                                </div>
+                                <div class="col-lg-12 text-center py-2">
+                                    <button type="submit" class="btn btn-primary px-4 rounded-pill">
+                                        送出訂購資訊
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="pt-5">
         <div class="connect border-top border-primary border-5 bg-white ">
